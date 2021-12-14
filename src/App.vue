@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="h-full w-full">
+    <Header />
+    <Banner />
+    <SectionURL />
+    <SectionBoost />
+    <TheFooter />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header"
+import Banner from "./components/Banner"
+import SectionURL from "./components/SectionURL"
+import SectionBoost from "./components/SectionBoost"
+import TheFooter from "./components/TheFooter"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Banner,
+    SectionURL,
+    SectionBoost,
+    TheFooter
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #2bd1d1;
 }
 </style>
